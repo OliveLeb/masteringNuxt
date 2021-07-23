@@ -1,5 +1,7 @@
 export default {
+
     components: true,
+
     head: {
         titleTemplate: "Mastering Nuxt: %s",
         htmlAttrs: {
@@ -11,5 +13,9 @@ export default {
         meta: [{
             charset: "utf-8"
         }],
+    },
+
+    router: {
+        prefetchLinks: false,
     },
 }
