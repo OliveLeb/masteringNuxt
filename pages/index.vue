@@ -1,7 +1,7 @@
 <template>
     <div style="display:flex">
         <div v-for="home in homes" :key="home.objectID" style="margin:10px;">
-            <HomeCard :home="home"/>
+            <nuxt-link :to="`/home/${home.objectID}`" no-prefetch><HomeCard :home="home"/></nuxt-link>
         </div>
     </div>
 </template>
