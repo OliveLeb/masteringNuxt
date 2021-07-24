@@ -200,7 +200,7 @@ export async function setContext (app, context) {
       payload: context.payload,
       error: context.error,
       base: app.router.options.base,
-      env: {"GOOGLE_API_KEY":"AIzaSyDgGrcVjuSBI0PG8kw7UVLbVDuShdZ_G1Q"}
+      env: {"GOOGLE_API_KEY":"AIzaSyDgGrcVjuSBI0PG8kw7UVLbVDuShdZ_G1Q","ALGOLIA_APP_ID":"PKCRFQC1AP","ALGOLIA_API_KEY":"f22d451956cb7269952d52903866a840"}
     }
     // Only set once
 

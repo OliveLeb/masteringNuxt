@@ -4,7 +4,7 @@
             <p>{{ home.title }}</p>
             <p> {{home.location.address}} {{home.location.city}} {{home.location.state}} </p>
             <p> {{ home.guests}} guests </p>
-            <p> {{ home.pricePerNight}} / nights </p>
+            <p> {{ home.pricePerNight}} €/ night </p>
     </div>
 </template>
 
