@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 export default {
 
     components: true,
@@ -20,4 +22,8 @@ export default {
     },
 
     plugins: [ '~/plugins/maps.client' ],
+
+    modules: [
+        '@nuxtjs/dotenv',
+    ]
 }
