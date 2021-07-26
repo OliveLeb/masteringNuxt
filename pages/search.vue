@@ -1,9 +1,15 @@
 <template>
     <div>
-        {{ lat }} / {{ lng }} / {{ label }} <br>
+        Results for {{ label }} <br>
+
+        <div style="height:800px;width:800px;float:right;" ref="map"></div>
+
         <div v-if='homes.length > 0'>
-            <HomeRow v-for="home in homes" :key="home.objectID" :home="home" />
+            <nuxt-link v-for="home in homes" :key="home.objectID" :to="`/home/${home.objectID}`">
+                <HomeRow :home="home" @mouseover.native="highlightMarker(home.objectID, true)" @mouseout.native="highlightMarker(home.objectID, false)"/>
+            </nuxt-link>
         </div>
+
         <div v-else>No results found</div>
     </div>
 </template>
@@ -15,12 +21,33 @@ export default {
             title: `Homes around ${this.label}`
         }
     },
+    mounted() {
+        this.updateMap()
+    },
+    methods: {
+        highlightMarker(homeId, isHighlighted) {
+            document.getElementsByClassName(`home-${homeId}`)[0]?.classList?.toggle('marker-highlight', isHighlighted)
+        },
+        updateMap() {
+            this.$maps.showMap(this.$refs.map, this.lat, this.lng, this.getHomeMarkers())
+        },
+        getHomeMarkers() {
+            return this.homes.map(home => {
+                return {
+                    ...home._geoloc,
+                    pricePerNight: home.pricePerNight,
+                    id: home.objectID,
+                }
+            })
+        }
+    },
     async beforeRouteUpdate(to, from, next) {
         const data = await this.$dataApi.getHomesByLocation(to.query.lat, to.query.lng)
         this.homes = data.json.hits
         this.label = to.query.label
         this.lat = to.query.lat
         this.lng = to.query.lng
+        this.updateMap()
         next()
     },
     async asyncData({ query, $dataApi }) {
@@ -34,3 +61,17 @@ export default {
     }
 }
 </script>
+
+<style>
+.marker {
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    border-radius: 20px;
+    padding: 5px 8px;
+}
+.marker-highlight {
+    color: #fff !important;
+    background-color: #000;
+    border-color: #000;
+}
+</style>
