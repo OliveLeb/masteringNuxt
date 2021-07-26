@@ -23,7 +23,21 @@ export default {
 
     plugins: [ '~/plugins/maps.client', '~/plugins/dataApi' ],
 
-    modules: [
+    modules: [],
+
+    buildModules: [
         '@nuxtjs/dotenv',
-    ]
+        '@nuxtjs/tailwindcss'
+    ],
+    
+    css: [
+        '~/assets/sass/app.scss',
+    ],
+
+    build: {
+        extractCss: true,
+        loaders: {
+            limit: 0,
+        }
+    },
 }
