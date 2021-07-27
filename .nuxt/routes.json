@@ -3,18 +3,21 @@
     "name": "search",
     "path": "/search",
     "component": "D:\\\\Informatique\\\\Projet\\\\Nuxt\\\\NuxtBnB\\\\pages\\\\search.vue",
-    "chunkName": "pages/search"
+    "chunkName": "pages/search",
+    "_name": "_5cb57780"
   },
   {
     "name": "home-id",
     "path": "/home/:id?",
     "component": "D:\\\\Informatique\\\\Projet\\\\Nuxt\\\\NuxtBnB\\\\pages\\\\home\\\\_id.vue",
-    "chunkName": "pages/home/_id"
+    "chunkName": "pages/home/_id",
+    "_name": "_5e389693"
   },
   {
     "name": "index",
     "path": "/",
     "component": "D:\\\\Informatique\\\\Projet\\\\Nuxt\\\\NuxtBnB\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_7952472a"
   }
 ]
