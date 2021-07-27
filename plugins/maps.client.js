@@ -3,6 +3,7 @@ export default function(context, inject) {
     let isLoaded = false;
     let waiting = [];
 
+    window.initGoogleMaps = initGoogleMaps;
     addScript();
 
     inject('maps', {
@@ -15,7 +16,6 @@ export default function(context, inject) {
         const script = document.createElement('script');
         script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.GOOGLE_API_KEY}&libraries=places&callback=initGoogleMaps`;
         script.async = true;
-        window.initGoogleMaps = initGoogleMaps;
         document.head.appendChild(script);
     }
 
