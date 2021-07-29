@@ -23,7 +23,7 @@ export default {
 
     plugins: [ '~/plugins/maps.client', '~/plugins/dataApi', '~/plugins/auth.client' ],
 
-    modules: [],
+    modules: ['~/modules/auth', '~/modules/algolia'],
 
     buildModules: [
         '@nuxtjs/dotenv',
@@ -46,7 +46,16 @@ export default {
             cookieName: 'idToken',
             clientId: '1019588980265-hhri468q6oq8an4pqe0eu0a3c8qntl0o.apps.googleusercontent.com'
         },
+        algolia: {
+            appId: 'PKCRFQC1AP',
+            key: 'f22d451956cb7269952d52903866a840',
+        }
     },
     privateRuntimeConfig: {
+        algolia: {
+            appId: 'PKCRFQC1AP',
+            key: '3913500563d83870d340229643ac7790'
+        }
     },
+
 }
