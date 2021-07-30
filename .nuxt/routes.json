@@ -1,5 +1,28 @@
 [
   {
+    "name": "admin",
+    "path": "/admin",
+    "component": "D:\\\\Informatique\\\\Projet\\\\Nuxt\\\\NuxtBnB\\\\pages\\\\admin.vue",
+    "chunkName": "pages/admin",
+    "children": [
+      {
+        "name": "admin-homes",
+        "path": "homes",
+        "component": "D:\\\\Informatique\\\\Projet\\\\Nuxt\\\\NuxtBnB\\\\pages\\\\admin\\\\homes.vue",
+        "chunkName": "pages/admin/homes",
+        "_name": "_754ee5c6"
+      }
+    ],
+    "_name": "_aa7cc9b2"
+  },
+  {
+    "name": "no-access",
+    "path": "/no-access",
+    "component": "D:\\\\Informatique\\\\Projet\\\\Nuxt\\\\NuxtBnB\\\\pages\\\\no-access.vue",
+    "chunkName": "pages/no-access",
+    "_name": "_1f48c648"
+  },
+  {
     "name": "search",
     "path": "/search",
     "component": "D:\\\\Informatique\\\\Projet\\\\Nuxt\\\\NuxtBnB\\\\pages\\\\search.vue",

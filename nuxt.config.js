@@ -25,6 +25,13 @@ export default {
 
     modules: ['~/modules/auth', '~/modules/algolia'],
 
+    build: {
+        extractCss: true,
+        loaders: {
+            limit: 0,
+        }
+    },
+
     buildModules: [
         '@nuxtjs/dotenv',
         '@nuxtjs/tailwindcss'
@@ -33,13 +40,6 @@ export default {
     css: [
         '~/assets/sass/app.scss',
     ],
-
-    build: {
-        extractCss: true,
-        loaders: {
-            limit: 0,
-        }
-    },
 
     publicRuntimeConfig: {
         auth: {
