@@ -38,9 +38,16 @@ export default {
 
     buildModules: [
         '@nuxtjs/dotenv',
-        '@nuxtjs/tailwindcss'
+        '@nuxtjs/tailwindcss',
+        '@nuxt/image',
     ],
     
+    image: {
+        cloudinary: {
+        baseURL: 'https://res.cloudinary.com/donkhsqcn/image/upload/'
+        }
+    },
+
     css: [
         '~/assets/sass/app.scss',
     ],
