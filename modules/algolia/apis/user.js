@@ -28,10 +28,17 @@ export default (algoliaConfig) => {
             }        
         },
 
-        assignHome: async function(identiy, homeId) {
-            const payload = (await this.getById(identiy)).json
+        assignHome: async function(identity, homeId) {
+            const payload = (await this.getById(identity)).json
             payload.homeId.push(homeId)
-            this.create(identiy, payload)
+            this.create(identity, payload)
+        },
+
+        removeHome: async function(identity, homeId) {
+            const payload = (await this.getById(identity)).json
+            const homes = payload.homeId.filter(id => id != homeId)
+            payload.homeId = homes
+            this.create(identity, payload)
         },
 
 
