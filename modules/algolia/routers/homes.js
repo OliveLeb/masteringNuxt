@@ -22,9 +22,10 @@ export default (apis) => {
         const resp = await apis.homes.create(homeId, payload)
         if(!resp.ok) {
             res.statusCode = 500
-            res.send()
+            res.end()
             return
         }
+        await apis.user.assignHome(identity, homeId)
         sendJSON({}, res)
     }
 }

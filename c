@@ -1,0 +1,179 @@
+[33mcommit 3ef30fdf1a26dd568d93bebb7e178638a398e4e2[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Fri Jul 30 18:59:49 2021 +0200
+
+    home form add input google maps autocomplete
+
+[33mcommit f984f11e1b7f4c10f22343b5cf68fc52184ab317[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Fri Jul 30 18:14:21 2021 +0200
+
+    add home
+
+[33mcommit 8cda45bcb2cb44f28699a3ede753b1311441039c[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Fri Jul 30 17:37:43 2021 +0200
+
+    refactoring admin section + create home form
+
+[33mcommit 3a3f0726b847dd9051d5427662aaefd4bcbd5b35[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Thu Jul 29 23:24:19 2021 +0200
+
+    finishing auth system
+
+[33mcommit 6757d9231fccd2d6e47ab98f98d7f6eb3d35fd42[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Tue Jul 27 23:14:26 2021 +0200
+
+    auth store
+
+[33mcommit 75dc614ffa52e174c503af4930c7fea52d4c95bb[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Tue Jul 27 19:31:07 2021 +0200
+
+    google auth
+
+[33mcommit 472c6b5e49cbc1b5a54e54605858b988b841ffee[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Mon Jul 26 23:12:41 2021 +0200
+
+    styling search page
+
+[33mcommit 027ad020c3a34dd778764d1c07f0f6d9e92d4a8e[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Mon Jul 26 22:45:55 2021 +0200
+
+    styling product page
+
+[33mcommit e371dc242108b414ef83a7ea18ab623c937a6a22[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Mon Jul 26 18:06:40 2021 +0200
+
+    styling header
+
+[33mcommit 07ac85b696dced89578a54ad784f785a0a9c3dd4[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Mon Jul 26 17:53:53 2021 +0200
+
+    import img, add tailwindcss and scss, config
+
+[33mcommit b499a0bb8b2ae34e5438518d59aa66fed60a0d18[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Mon Jul 26 15:58:30 2021 +0200
+
+    adding markers and styling
+
+[33mcommit d740fe67e9aa37ff0cd88ec75ebfa79957ca7156[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Mon Jul 26 15:24:31 2021 +0200
+
+    display result after geo searching
+
+[33mcommit 61ddf99dc70ebf25768a7f3cf0d67a0ecd4ad25f[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Mon Jul 26 15:07:07 2021 +0200
+
+    geo search
+
+[33mcommit 90c7834e4e538f389f9d96a5928a4435567d619a[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Mon Jul 26 14:51:50 2021 +0200
+
+    google places autocompletion
+
+[33mcommit 511f220aabde413cac9c03994ba1adf802ba2f88[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Sat Jul 24 13:47:27 2021 +0200
+
+    refactoring fetch with Promise.all
+
+[33mcommit 3576dda94f5cda5e39bd5428cc47b4b71e7c06dd[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Sat Jul 24 13:40:14 2021 +0200
+
+    fetch users info
+
+[33mcommit 05d97f3ff23b007ad0e5eb90e7de51a85a00fccb[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Sat Jul 24 13:32:05 2021 +0200
+
+    reviews data formating
+
+[33mcommit 55c0b3ac51bba311e90ea575201c6bc1d6ebeb0b[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Sat Jul 24 13:06:18 2021 +0200
+
+    fetch home reviews by id
+
+[33mcommit 58915688205b2075725177d47ed43537c77324d0[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Sat Jul 24 12:51:24 2021 +0200
+
+    custom error page
+
+[33mcommit 85fcc684524348565b2d2edd30c88267ca613bfb[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Sat Jul 24 12:15:00 2021 +0200
+
+    algolia, fetch, error handling
+
+[33mcommit 6856ef5ed62e128e0761675f68eb00016d4358c0[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Sat Jul 24 11:14:33 2021 +0200
+
+    hiding google api key
+
+[33mcommit b9b462e606fe1cbc2e4c6719bdedc7f59dfe4420[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Sat Jul 24 02:05:12 2021 +0200
+
+    refactoring google maps
+
+[33mcommit 6472d07102178ff92564e512df4dc390d4da1c32[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Sat Jul 24 01:26:01 2021 +0200
+
+    add google map
+
+[33mcommit 1d9397b3bf62f0188c4d2f0d7859f73794550788[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Sat Jul 24 00:23:09 2021 +0200
+
+    nuxtlink
+
+[33mcommit 5dbfa2e9b27a73fe77337e47d07f31125fa51ce4[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Thu Jul 22 01:53:00 2021 +0200
+
+    meta tags, html attribute
+
+[33mcommit 47008ccf9d4c6adb705d464a552a6f59677b5620[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Thu Jul 22 01:47:37 2021 +0200
+
+    creating nuxt.config file component:true
+
+[33mcommit eb98770bd658a5885f487a4fa34646946d982ad4[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Thu Jul 22 01:45:11 2021 +0200
+
+    HomeCard Components
+
+[33mcommit a559cf11e8cd4f648a69efa3ba9203d50570226d[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Thu Jul 22 01:38:45 2021 +0200
+
+    homepage
+
+[33mcommit 0ee23c13e72925dcd34d4719dfdf573f897a84a9[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Thu Jul 22 01:20:47 2021 +0200
+
+    creating first page
+
+[33mcommit fa06257a66d97769a7cdb84bedb980fb66e83b06[m
+Author: OliveLeb <lebel.olivier@wanadoo.fr>
+Date:   Thu Jul 22 01:14:29 2021 +0200
+
+    yarn add nuxt

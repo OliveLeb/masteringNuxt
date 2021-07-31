@@ -28,6 +28,12 @@ export default (algoliaConfig) => {
             }        
         },
 
+        assignHome: async function(identiy, homeId) {
+            const payload = (await this.getById(identiy)).json
+            payload.homeId.push(homeId)
+            this.create(identiy, payload)
+        },
+
 
 
     }

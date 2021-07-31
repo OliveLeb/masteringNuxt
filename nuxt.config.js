@@ -23,7 +23,11 @@ export default {
 
     plugins: [ '~/plugins/maps.client', '~/plugins/dataApi', '~/plugins/auth.client' ],
 
-    modules: ['~/modules/auth', '~/modules/algolia'],
+    modules: ['~/modules/auth', '~/modules/algolia', '~/modules/cloudinary', '@nuxtjs/cloudinary'],
+
+    cloudinary: {
+        cloudName: 'donkhsqcn',
+    },
 
     build: {
         extractCss: true,
@@ -44,17 +48,23 @@ export default {
     publicRuntimeConfig: {
         auth: {
             cookieName: 'idToken',
-            clientId: '1019588980265-hhri468q6oq8an4pqe0eu0a3c8qntl0o.apps.googleusercontent.com'
+            clientId: process.env.GOOGLE_AUTH_CLIENT_ID
         },
         algolia: {
-            appId: 'PKCRFQC1AP',
-            key: 'f22d451956cb7269952d52903866a840',
+            appId: process.env.ALGOLIA_APP_ID,
+            key: process.env.ALGOLIA_API_KEY,
+        },
+        cloudinary: {
+            apiKey: process.env.CLOUDINARY_API_KEY,
         }
     },
     privateRuntimeConfig: {
         algolia: {
-            appId: 'PKCRFQC1AP',
-            key: '3913500563d83870d340229643ac7790'
+            appId: process.env.ALGOLIA_APP_ID,
+            key: process.env.ALGOLIA_PRIVATE_API_KEY
+        },
+        cloudinary: {
+            apiSecret:process.env.CLOUDINARY_API_SECRET,
         }
     },
 
