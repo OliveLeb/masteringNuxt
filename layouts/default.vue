@@ -2,9 +2,9 @@
     <div class="app">
         
         <header class="app-header">
-            <div class="app-logo">
+            <nuxt-link class="app-logo" to="/">
                 <img src="/images/logo.svg">
-            </div>
+            </nuxt-link>
             <div class="app-search">
                 <input type="text" ref="citySearch" @changed="changed" placeholder="Enter your address">
                 
