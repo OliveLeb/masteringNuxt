@@ -109,8 +109,6 @@ export default {
     },
     methods: {
        async onSubmit() {
-           console.log(this.home.availabilityRanges[0].start.getTime())
-           return
            const response = await unWrap(await fetch('/api/homes', {
                method: 'POST',
                body: JSON.stringify(this.home),
