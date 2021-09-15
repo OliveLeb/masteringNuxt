@@ -21,7 +21,12 @@ export default {
         prefetchLinks: false,
     },
 
-    plugins: [ '~/plugins/maps.client', '~/plugins/dataApi', '~/plugins/auth.client' ],
+    plugins: [ 
+        '~/plugins/maps.client',
+        '~/plugins/dataApi',
+        '~/plugins/auth.client',
+        '~/plugins/vCalendar.client'
+    ],
 
     modules: ['~/modules/auth', '~/modules/algolia', '~/modules/cloudinary', '@nuxtjs/cloudinary'],
 

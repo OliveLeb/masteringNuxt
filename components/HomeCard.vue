@@ -1,6 +1,6 @@
 <template>
     <div>
-            <img :src="home.images[0]" style="width:200px"><br/>
+            <nuxt-img :src="home.images[0]" width="200" height="150" provider="cloudinary" /><br/>
             <p>{{ home.title }}</p>
             <p> {{home.location.address}} {{home.location.city}} {{home.location.state}} </p>
             <p> {{ home.guests}} guests </p>
