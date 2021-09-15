@@ -2,6 +2,8 @@ require('dotenv').config()
 
 export default {
 
+    rootUrl: process.env.NODE_ENV === 'production' ? 'https://mastering-nuxt-nu.vercel.app' : 'http://localhost:3000',
+
     components: true,
 
     head: {
