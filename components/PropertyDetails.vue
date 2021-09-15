@@ -59,7 +59,7 @@ export default {
         }
     },
 
-    monted() {
+    mounted() {
         if(this.$route.query.result == 'success') {
             alert('Success!')
         }
