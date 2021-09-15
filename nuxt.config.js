@@ -25,10 +25,17 @@ export default {
         '~/plugins/maps.client',
         '~/plugins/dataApi',
         '~/plugins/auth.client',
-        '~/plugins/vCalendar.client'
+        '~/plugins/vCalendar.client',
+        '~/plugins/stripe.client'
     ],
 
-    modules: ['~/modules/auth', '~/modules/algolia', '~/modules/cloudinary', '@nuxtjs/cloudinary'],
+    modules: [
+        '~/modules/auth',
+        '~/modules/algolia', 
+        '~/modules/cloudinary', 
+        '@nuxtjs/cloudinary',
+        '~/modules/stripe',
+    ],
 
     cloudinary: {
         cloudName: 'donkhsqcn',
@@ -68,6 +75,9 @@ export default {
         },
         cloudinary: {
             apiKey: process.env.CLOUDINARY_API_KEY,
+        },
+        stripe: {
+            key: process.env.STRIPE_PUBLISHABLE_KEY,
         }
     },
     privateRuntimeConfig: {
@@ -76,7 +86,10 @@ export default {
             key: process.env.ALGOLIA_PRIVATE_API_KEY
         },
         cloudinary: {
-            apiSecret:process.env.CLOUDINARY_API_SECRET,
+            apiSecret: process.env.CLOUDINARY_API_SECRET,
+        },
+        stripe: {
+            secretKey: process.env.STRIPE_SECRET_KEY
         }
     },
 

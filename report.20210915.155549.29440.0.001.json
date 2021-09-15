@@ -1,0 +1,525 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20210915.155549.29440.0.001.json",
+    "dumpEventTime": "2021-09-15T15:55:49Z",
+    "dumpEventTimeStamp": "1631714149694",
+    "processId": 29440,
+    "cwd": "D:\\Informatique\\Projet\\Nuxt\\NuxtBnB",
+    "commandLine": [
+      "D:\\Informatique\\nodejs\\node.exe",
+      "D:\\Informatique\\Projet\\Nuxt\\NuxtBnB\\node_modules\\.bin\\\\..\\nuxt\\bin\\nuxt.js"
+    ],
+    "nodejsVersion": "v12.14.1",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.14.1",
+      "v8": "7.7.299.13-node.16",
+      "uv": "1.33.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.1",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.14.1/node-v12.14.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.14.1/node-v12.14.1.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.14.1/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "10.0.19043",
+    "osVersion": "Windows 10 Home",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+        "speed": 2808,
+        "user": 44935406,
+        "nice": 0,
+        "sys": 50595671,
+        "idle": 544806187,
+        "irq": 16760218
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+        "speed": 2808,
+        "user": 39167640,
+        "nice": 0,
+        "sys": 22665390,
+        "idle": 578504062,
+        "irq": 4523906
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+        "speed": 2808,
+        "user": 72439312,
+        "nice": 0,
+        "sys": 27336156,
+        "idle": 540561625,
+        "irq": 559968
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+        "speed": 2808,
+        "user": 39109890,
+        "nice": 0,
+        "sys": 13067937,
+        "idle": 588159250,
+        "irq": 259203
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+        "speed": 2808,
+        "user": 53291656,
+        "nice": 0,
+        "sys": 26122984,
+        "idle": 560922437,
+        "irq": 452281
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+        "speed": 2808,
+        "user": 35072640,
+        "nice": 0,
+        "sys": 13771703,
+        "idle": 591492734,
+        "irq": 276375
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+        "speed": 2808,
+        "user": 47751062,
+        "nice": 0,
+        "sys": 23896296,
+        "idle": 568689718,
+        "irq": 381203
+      },
+      {
+        "model": "Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+        "speed": 2808,
+        "user": 52828546,
+        "nice": 0,
+        "sys": 17320453,
+        "idle": 570188093,
+        "irq": 239296
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "Ethernet 2",
+        "internal": false,
+        "mac": "00:ff:a1:c4:a3:f6",
+        "address": "fe80::41f7:a6b8:7fb1:f79",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 15
+      },
+      {
+        "name": "Ethernet 2",
+        "internal": false,
+        "mac": "00:ff:a1:c4:a3:f6",
+        "address": "169.254.123.140",
+        "netmask": "255.255.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "98:22:ef:94:cd:b1",
+        "address": "2a01:cb00:d83:1a00:d8ee:e695:3c38:f79b",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "98:22:ef:94:cd:b1",
+        "address": "2a01:cb00:d83:1a00:a443:d042:69b8:3558",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "98:22:ef:94:cd:b1",
+        "address": "fe80::d8ee:e695:3c38:f79b",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 4
+      },
+      {
+        "name": "Wi-Fi",
+        "internal": false,
+        "mac": "98:22:ef:94:cd:b1",
+        "address": "192.168.1.24",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "Loopback Pseudo-Interface 1",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "LAPTOP-SLPONTGG"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x00007ff6c9d31759",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+10873"
+    },
+    {
+      "pc": "0x00007ff6c9d35b7c",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+28316"
+    },
+    {
+      "pc": "0x00007ff6c9d34b38",
+      "symbol": "std::basic_ostream<char,std::char_traits<char> >::operator<<+24152"
+    },
+    {
+      "pc": "0x00007ff6c9e2433b",
+      "symbol": "v8::base::CPU::has_sse+37723"
+    },
+    {
+      "pc": "0x00007ff6ca628c5e",
+      "symbol": "v8::Isolate::ReportExternalAllocationLimitReached+94"
+    },
+    {
+      "pc": "0x00007ff6ca610ca1",
+      "symbol": "v8::SharedArrayBuffer::Externalize+833"
+    },
+    {
+      "pc": "0x00007ff6ca4de56c",
+      "symbol": "v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1436"
+    },
+    {
+      "pc": "0x00007ff6ca4e9910",
+      "symbol": "v8::internal::Heap::ProtectUnprotectedMemoryChunks+1312"
+    },
+    {
+      "pc": "0x00007ff6ca4e6444",
+      "symbol": "v8::internal::Heap::PageFlagsAreConsistent+3204"
+    },
+    {
+      "pc": "0x00007ff6ca4dbcd3",
+      "symbol": "v8::internal::Heap::CollectGarbage+1283"
+    },
+    {
+      "pc": "0x00007ff6ca4da4a4",
+      "symbol": "v8::internal::Heap::AddRetainedMap+2356"
+    },
+    {
+      "pc": "0x00007ff6ca502333",
+      "symbol": "v8::internal::Factory::NewRawOneByteString+83"
+    },
+    {
+      "pc": "0x00007ff6ca32965a",
+      "symbol": "v8::internal::String::SlowFlatten+442"
+    },
+    {
+      "pc": "0x00007ff6ca1f291f",
+      "symbol": "unibrow::Utf8::EncodeOneByte+687"
+    },
+    {
+      "pc": "0x00007ff6ca326014",
+      "symbol": "v8::internal::FlatStringReader::FlatStringReader+1076"
+    },
+    {
+      "pc": "0x00007ff6ca22d1aa",
+      "symbol": "v8::internal::StubCache::value_reference+12282"
+    },
+    {
+      "pc": "0x00007ff6caa5463d",
+      "symbol": "v8::internal::SetupIsolateDelegate::SetupHeap+567949"
+    },
+    {
+      "pc": "0x0000021803313f79",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2189692928,
+    "totalCommittedMemory": 2189692928,
+    "usedMemory": 1886127936,
+    "availableMemory": 273118744,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261872,
+        "used": 32296,
+        "available": 229576
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 33554432,
+        "capacity": 16759808,
+        "used": 16737712,
+        "available": 22096
+      },
+      "old_space": {
+        "memorySize": 1948626944,
+        "committedMemory": 1948626944,
+        "capacity": 1915810680,
+        "used": 1667825784,
+        "available": 247984896
+      },
+      "code_space": {
+        "memorySize": 2260992,
+        "committedMemory": 2260992,
+        "capacity": 2005920,
+        "used": 2005920,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 8916992,
+        "committedMemory": 8916992,
+        "capacity": 3731520,
+        "used": 3731520,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 194867200,
+        "committedMemory": 194867200,
+        "capacity": 194694288,
+        "used": 194694288,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 1204224,
+        "committedMemory": 1204224,
+        "capacity": 1100416,
+        "used": 1100416,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 16759808,
+        "used": 0,
+        "available": 16759808
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 90.093,
+    "kernelCpuSeconds": 8.031,
+    "cpuConsumptionPercent": 4.14725,
+    "maxRss": 2156470272,
+    "pageFaults": {
+      "IORequired": 1265916,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 6453,
+      "writes": 74
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=C:": "C:\\",
+    "=D:": "D:\\Informatique\\Projet\\Nuxt\\NuxtBnB",
+    "ALGOLIA_API_KEY": "f22d451956cb7269952d52903866a840",
+    "ALGOLIA_APP_ID": "PKCRFQC1AP",
+    "ALGOLIA_PRIVATE_API_KEY": "3913500563d83870d340229643ac7790",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\Olive\\AppData\\Roaming",
+    "CHROME_CRASHPAD_PIPE_NAME": "\\\\.\\pipe\\crashpad_24984_CYMGUMHWCNYWTUFA",
+    "CLOUDINARY_API_KEY": "551355362824123",
+    "CLOUDINARY_API_SECRET": "oIY-MBOsxwkOVMIAN6J3cGDM9HM",
+    "COLORTERM": "truecolor",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "LAPTOP-SLPONTGG",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "DASHLANE_DLL_DIR": "C:\\Users\\Olive\\AppData\\Roaming\\Dashlane\\6.1946.0.26096\\bin\\Firefox_Extension\\{442718d9-475e-452a-b3e1-fb1ee16b8e9f}\\components;C:\\Users\\Olive\\AppData\\Roaming\\Dashlane\\6.1946.0.26096\\ucrt;C:\\Users\\Olive\\AppData\\Roaming\\Dashlane\\6.1946.0.26096\\bin\\Qt;C:\\Users\\Olive\\AppData\\Roaming\\Dashlane\\6.1946.0.26096\\ucrt;C:\\Users\\Olive\\AppData\\Roaming\\Dashlane\\6.1946.0.26096\\bin\\Ssl",
+    "DriverData": "C:\\Windows\\System32\\Drivers\\DriverData",
+    "GIT_ASKPASS": "d:\\Informatique\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh",
+    "GOOGLE_API_KEY": "AIzaSyDgGrcVjuSBI0PG8kw7UVLbVDuShdZ_G1Q",
+    "GOOGLE_AUTH_CLIENT_ID": "1019588980265-hhri468q6oq8an4pqe0eu0a3c8qntl0o.apps.googleusercontent.com",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Olive",
+    "INIT_CWD": "D:\\Informatique\\Projet\\Nuxt\\NuxtBnB",
+    "JAVA_HOME": "C:\\Program Files\\Java\\jdk-10.0.1",
+    "LANG": "fr_FR.UTF-8",
+    "LOCALAPPDATA": "C:\\Users\\Olive\\AppData\\Local",
+    "LOGONSERVER": "\\\\LAPTOP-SLPONTGG",
+    "NODE": "D:\\Informatique\\nodejs\\node.exe",
+    "NODE_ENV": "development",
+    "NODE_PATH": "C:\\Users\\Olive\\scoop\\apps\\yarn\\current\\global\\node_modules",
+    "npm_config_argv": "{\"remain\":[],\"cooked\":[\"run\",\"dev\"],\"original\":[\"dev\"]}",
+    "npm_config_bin_links": "true",
+    "npm_config_cache_folder": "C:\\Users\\Olive\\scoop\\apps\\yarn\\current\\cache",
+    "npm_config_global_folder": "C:\\Users\\Olive\\scoop\\apps\\yarn\\current\\global",
+    "npm_config_ignore_optional": "",
+    "npm_config_ignore_scripts": "",
+    "npm_config_init_license": "MIT",
+    "npm_config_init_version": "1.0.0",
+    "npm_config_prefix": "C:\\Users\\Olive\\scoop\\apps\\yarn\\current\\global",
+    "npm_config_registry": "https://registry.yarnpkg.com",
+    "npm_config_save_prefix": "^",
+    "npm_config_strict_ssl": "true",
+    "npm_config_user_agent": "yarn/1.22.4 npm/? node/v12.14.1 win32 x64",
+    "npm_config_version_commit_hooks": "true",
+    "npm_config_version_git_message": "v%s",
+    "npm_config_version_git_sign": "",
+    "npm_config_version_git_tag": "true",
+    "npm_config_version_tag_prefix": "v",
+    "npm_config_yarn_offline_mirror": "C:\\Users\\Olive\\scoop\\apps\\yarn\\current\\mirror",
+    "npm_execpath": "C:\\Users\\Olive\\scoop\\apps\\yarn\\1.22.4\\Yarn\\bin\\yarn.js",
+    "npm_lifecycle_event": "dev",
+    "npm_lifecycle_script": "nuxt",
+    "npm_node_execpath": "D:\\Informatique\\nodejs\\node.exe",
+    "npm_package_dependencies_body_parser": "^1.19.0",
+    "npm_package_dependencies_cloudinary_vue": "1.1.2",
+    "npm_package_dependencies_cookie": "^0.4.1",
+    "npm_package_dependencies_google_auth_library": "^7.3.0",
+    "npm_package_dependencies_js_cookie": "^3.0.0",
+    "npm_package_dependencies_nuxt": "^2.15.7",
+    "npm_package_dependencies_uuid": "^8.3.2",
+    "npm_package_dependencies_v_calendar": "^2.3.2",
+    "npm_package_dependencies__nuxtjs_cloudinary": "^1.0.3",
+    "npm_package_devDependencies_sass": "^1.36.0",
+    "npm_package_devDependencies_sass_loader": "^10.2.0",
+    "npm_package_devDependencies__nuxtjs_dotenv": "^1.4.1",
+    "npm_package_devDependencies__nuxtjs_tailwindcss": "^4.2.1",
+    "npm_package_devDependencies__nuxt_image": "^0.5.0",
+    "npm_package_name": "mastering-nuxt",
+    "npm_package_scripts_build": "nuxt build",
+    "npm_package_scripts_dev": "nuxt",
+    "npm_package_scripts_start": "nuxt start",
+    "npm_package_version": "",
+    "NUMBER_OF_PROCESSORS": "8",
+    "OneDrive": "C:\\Users\\Olive\\OneDrive",
+    "OneDriveConsumer": "C:\\Users\\Olive\\OneDrive",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "undefined",
+    "OS": "Windows_NT",
+    "Path": "C:\\Users\\Olive\\AppData\\Local\\Temp\\yarn--1631711783013-0.9266598937223429;D:\\Informatique\\Projet\\Nuxt\\NuxtBnB\\node_modules\\.bin;C:\\Users\\Olive\\AppData\\Local\\Yarn\\Data\\link\\node_modules\\.bin;C:\\Users\\Olive\\scoop\\apps\\yarn\\current\\global\\bin;D:\\Informatique\\libexec\\lib\\node_modules\\npm\\bin\\node-gyp-bin;D:\\Informatique\\lib\\node_modules\\npm\\bin\\node-gyp-bin;D:\\Informatique\\nodejs\\node_modules\\npm\\bin\\node-gyp-bin;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;D:\\Informatique\\Brackets\\command;D:\\Informatique\\nodejs\\;D:\\Git\\cmd;D:\\Informatique\\php\\;C:\\ProgramData\\ComposerSetup\\bin;D:\\Informatique\\composer;C:\\Program Files (x86)\\Calibre2\\;C:\\Users\\Olive\\scoop\\apps\\yarn\\current\\Yarn\\bin;C:\\Users\\Olive\\scoop\\apps\\yarn\\current\\global\\node_modules\\.bin;C:\\Users\\Olive\\scoop\\shims;C:\\Program Files\\Java\\jdk-10.0.1\\bin;C:\\Users\\Olive\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Olive\\AppData\\Roaming\\Dashlane\\6.1946.0.26096\\bin\\Firefox_Extension\\{442718d9-475e-452a-b3e1-fb1ee16b8e9f}\\components;C:\\Users\\Olive\\AppData\\Roaming\\Dashlane\\6.1946.0.26096\\ucrt;C:\\Users\\Olive\\AppData\\Roaming\\Dashlane\\6.1946.0.26096\\bin\\Qt;C:\\Users\\Olive\\AppData\\Roaming\\Dashlane\\6.1946.0.26096\\bin\\Ssl;C:\\Users\\Olive\\AppData\\Roaming\\npm;D:\\Informatique\\Microsoft VS Code\\bin;C:\\Users\\Olive\\Desktop\\node\\jour5\\heroku\\bin;C:\\Program Files\\MongoDB\\Server\\4.2\\bin;D:\\Informatique\\heroku\\bin;C:\\Users\\Olive\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Olive\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\Informatique\\PostgreSQL\\12\\bin",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 158 Stepping 9, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "9e09",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules",
+    "PUBLIC": "C:\\Users\\Public",
+    "STRIPE_SECRET_KEY": "sk_test_51HX99EGk43TbK34uvJ93FqnBj9ZE2qkKsoCopwWZPLJ3O27AJweaGloiqBl190FN72ODTuZAUBhT7Rk8osFn3adx00eJ7hDPnD",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\Olive\\AppData\\Local\\Temp",
+    "TERM_PROGRAM": "vscode",
+    "TERM_PROGRAM_VERSION": "1.60.1",
+    "TMP": "C:\\Users\\Olive\\AppData\\Local\\Temp",
+    "USERDOMAIN": "LAPTOP-SLPONTGG",
+    "USERDOMAIN_ROAMINGPROFILE": "LAPTOP-SLPONTGG",
+    "USERNAME": "Olive",
+    "USERPROFILE": "C:\\Users\\Olive",
+    "VIPSHOME": "\\\\?\\D:\\Informatique\\Projet\\Nuxt\\NuxtBnB\\node_modules\\sharp\\build\\Release",
+    "VIPS_MIN_STACK_SIZE": "2m",
+    "VSCODE_GIT_ASKPASS_MAIN": "d:\\Informatique\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js",
+    "VSCODE_GIT_ASKPASS_NODE": "D:\\Informatique\\Microsoft VS Code\\Code.exe",
+    "VSCODE_GIT_IPC_HANDLE": "\\\\.\\pipe\\vscode-git-ec47552f2e-sock",
+    "VUE_ENV": "server",
+    "windir": "C:\\WINDOWS",
+    "YARN_WRAP_OUTPUT": "false",
+    "_applied": "true",
+    "__COMPAT_LAYER": "RunAsAdmin DetectorsAppHealth"
+  },
+  "sharedObjects": [
+    "D:\\Informatique\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\Program Files\\AVAST Software\\Avast\\aswhook.dll",
+    "C:\\WINDOWS\\System32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\System32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\SYSTEM32\\apphelp.dll",
+    "C:\\WINDOWS\\System32\\WS2_32.dll",
+    "C:\\WINDOWS\\System32\\RPCRT4.dll",
+    "C:\\WINDOWS\\System32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\System32\\msvcrt.dll",
+    "C:\\WINDOWS\\System32\\ucrtbase.dll",
+    "C:\\WINDOWS\\System32\\sechost.dll",
+    "C:\\WINDOWS\\System32\\USER32.dll",
+    "C:\\WINDOWS\\System32\\win32u.dll",
+    "C:\\WINDOWS\\System32\\GDI32.dll",
+    "C:\\WINDOWS\\System32\\gdi32full.dll",
+    "C:\\WINDOWS\\System32\\msvcp_win.dll",
+    "C:\\WINDOWS\\System32\\PSAPI.DLL",
+    "C:\\WINDOWS\\System32\\CRYPT32.dll",
+    "C:\\WINDOWS\\System32\\bcrypt.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINMM.dll",
+    "C:\\WINDOWS\\System32\\IMM32.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\powrprof.dll",
+    "C:\\WINDOWS\\SYSTEM32\\UMPDC.dll",
+    "C:\\WINDOWS\\SYSTEM32\\CRYPTBASE.DLL",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\System32\\combase.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\SYSTEM32\\kernel.appcore.dll",
+    "C:\\WINDOWS\\System32\\bcryptprimitives.dll",
+    "\\\\?\\D:\\Informatique\\Projet\\Nuxt\\NuxtBnB\\node_modules\\sharp\\build\\Release\\sharp.node",
+    "\\\\?\\D:\\Informatique\\Projet\\Nuxt\\NuxtBnB\\node_modules\\sharp\\build\\Release\\libvips-42.dll",
+    "\\\\?\\D:\\Informatique\\Projet\\Nuxt\\NuxtBnB\\node_modules\\sharp\\build\\Release\\libvips-cpp.dll",
+    "C:\\WINDOWS\\System32\\SHELL32.dll",
+    "C:\\WINDOWS\\System32\\SHLWAPI.dll",
+    "C:\\WINDOWS\\System32\\ole32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "\\\\?\\D:\\Informatique\\Projet\\Nuxt\\NuxtBnB\\node_modules\\sharp\\build\\Release\\libglib-2.0-0.dll",
+    "\\\\?\\D:\\Informatique\\Projet\\Nuxt\\NuxtBnB\\node_modules\\sharp\\build\\Release\\libgobject-2.0-0.dll",
+    "C:\\WINDOWS\\System32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\WINDOWS\\System32\\fwpuclnt.dll",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll"
+  ]
+}

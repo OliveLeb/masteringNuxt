@@ -1,4 +1,4 @@
-import { getHeaders } from "../helpers"
+import { getHeaders } from "../../helpers"
 import fetch from 'node-fetch'
 import { unWrap, getErrorResponse } from "../../../utils/fetchUtils"
 
@@ -35,6 +35,16 @@ export default (algoliaConfig) => {
                 return unWrap (await fetch(`https://${algoliaConfig.appId}-dsn.algolia.net/1/indexes/homes/${homeId}`, {
                     headers,
                     method: 'DELETE',
+                }))
+            } catch(err) {
+                return getErrorResponse(err)
+            }
+        },
+
+        get: async (homeId) => {
+            try {
+                return unWrap (await fetch(`https://${algoliaConfig.appId}-dsn.algolia.net/1/indexes/homes/${homeId}`, {
+                    headers,
                 }))
             } catch(err) {
                 return getErrorResponse(err)
