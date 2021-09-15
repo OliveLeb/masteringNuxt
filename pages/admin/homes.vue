@@ -53,7 +53,7 @@
             <template v-slot="{ inputValue, inputEvents }">
                 <input :value="inputValue.start" v-on="inputEvents.start">
                 to
-                <input :value="inputValue.end" v-on="inputEvents.end">
+                <input :value="inputValue.end" v-on="inputEvents.end"><br/>
             </template>
             </date-picker>
 

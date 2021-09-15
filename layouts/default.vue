@@ -7,9 +7,30 @@
             </div>
             <div class="app-search">
                 <input type="text" ref="citySearch" @changed="changed" placeholder="Enter your address">
-                <input type="text" class="datepicker" placeholder="Check in">
-                <input type="text" class="datepicker" placeholder="Check out">
-                <button>
+                
+                <client-only>
+
+                    <template #placeholder>
+                        <input class="datepicker">
+                        <span class="-m-6 mr-2">to</span>
+                        <input class="datepicker"><br>
+                    </template>
+
+                    <date-picker
+                        v-model="range"
+                        is-range
+                        timezone="UTC"
+                        :modelConfig="{ timeAdjust: '00:00:00'}"
+                    >
+                        <template v-slot="{ inputValue, inputEvents }">
+                            <input :value="inputValue.start" v-on="inputEvents.start" class="datepicker">
+                            <span class="-m-6 mr-2">to</span>
+                            <input :value="inputValue.end" v-on="inputEvents.end" class="datepicker"><br>
+                        </template>
+                    </date-picker>
+                </client-only>
+
+                <button @click="search">
                     <img src="/images/icons/search.svg">
                 </button>
             </div>
@@ -31,6 +52,20 @@
 
 <script>
 export default {
+    data() {
+        return {
+            range: {
+                start: new Date(),
+                end: new Date()
+            },
+            location: {
+                lat: 0,
+                lng: 0,
+                label: ''
+            },
+        }
+    },
+
     mounted() {
         this.$maps.makeAutoComplete(this.$refs.citySearch)
     },
@@ -47,12 +82,19 @@ export default {
             const place = event.detail;
             if(!place.geometry) return;
 
+            this.location.lat = place.geometry.location.lat()
+            this.location.lng = place.geometry.location.lng()
+            this.location.label = this.$refs.citySearch.value
+        },
+
+        search() {
+            if(!this.location.label) return
             this.$router.push({ 
                 name: 'search',
                 query: {
-                    lat: place.geometry.location.lat(),
-                    lng: place.geometry.location.lng(),
-                    label: this.$refs.citySearch.value,
+                    ...this.location,
+                    start: this.range.start.getTime() / 1000,
+                     end: this.range.end.getTime() / 1000
                 },
             });
         },
