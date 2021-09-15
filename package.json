@@ -15,7 +15,8 @@
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
-    "start": "nuxt start"
+    "start": "nuxt start",
+    "vercel-build": "yarn global add node-gyp sharp"
   },
   "devDependencies": {
     "@nuxt/image": "^0.5.0",
