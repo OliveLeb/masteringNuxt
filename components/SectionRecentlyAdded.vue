@@ -12,7 +12,7 @@
             :key="index"
             class="app-house">
             <div class="app-house-header">
-              <nuxt-img :src="home.images[0]" width="300" height="175" provider="cloudinary"/>
+              <nuxt-img :src="'mastering-nuxt/'+home.images[0]" width="300" height="175" provider="cloudinary"/>
             </div>
             <div class="app-house-body">
               <div class="app-rating">

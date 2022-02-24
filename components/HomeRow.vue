@@ -5,7 +5,7 @@
             provider="cloudinary"
             height="200"
             width="360"
-            :src="home.images[0]"
+            :src="'mastering-nuxt/'+home.images[0]"
             :modifiers="{effect:'grayscale', opacity:50}"
             />
         <div class="app-house-body">

@@ -18,7 +18,7 @@ export default {
     },
     methods: {
         getImageUrl(publicId) {
-            return this.$img(publicId, {
+            return this.$img('mastering-nuxt/'+publicId, {
                 width: 600,
             }, {
                 provider: 'cloudinary'
